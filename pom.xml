@@ -17,7 +17,7 @@
         <module>config-server</module>
         <module>api-gateway</module>
         <module>auth-service</module>
-        <module>User-Service</module>
+        <module>user-service</module>
     </modules>
 
     <properties>
