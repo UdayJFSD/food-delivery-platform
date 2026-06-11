@@ -20,22 +20,21 @@ public class CustomerProfileController {
 
     @PostMapping
     public CustomerProfileResponse createProfile(
-            @RequestBody
-            CreateProfileRequest request) {
+            @RequestBody CreateProfileRequest request) {
 
         return service.createProfile(request);
     }
 
     @GetMapping("/{id}")
     public CustomerProfileResponse getProfile(
-            @PathVariable Long id) {
+            @PathVariable("id") Long id) {
 
         return service.getProfile(id);
     }
 
     @PutMapping("/{id}")
     public CustomerProfileResponse updateProfile(
-            @PathVariable Long id,
+            @PathVariable("id") Long id,
             @RequestBody CreateProfileRequest request) {
 
         return service.updateProfile(
